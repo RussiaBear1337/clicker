@@ -1,36 +1,13 @@
-body{
-    margin: 0px;
-    padding: 0px;
-}
+let rayan = document.querySelector(".rayan")
+let scoreHTML = document.querySelector(".score")
 
-.game{
-    width: 100vw;
-    height: 100vh;
+
+
+let score = 0
+
+rayan.addEventListener("click", function(){
+    score = score + 1
+    scoreHTML.innerHTML = score
     
-    display: flex;
-    background-color: aliceblue;
-}
+})
 
-.shopL{
-    width: 30vw;
-    height: 100vh;
-
-    background-color: blue;
-}
-
-.clicks{
-    width: 70vw;
-    height: 100vh;
-    background-color: whitesmoke;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.clickButton{
-    width: 200px;
-    height: 200px;
-
-    border-radius: 100%;
-    background-color: red;
-}
